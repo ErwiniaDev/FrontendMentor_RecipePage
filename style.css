@@ -139,7 +139,7 @@ h2 {
     color: var(--brown800);
 }
 
-h3 {
+#preparation-title {
     color: var(--rose800);
     font-size: var(--font-title3);
 }
@@ -270,7 +270,7 @@ table{
     article {
         background-color: var(--white);
         border-radius: 20px;
-        padding: 2.5rem;
+        padding: 2.5rem 2.5rem 0.7rem 2.5rem;
         max-width: 51%;
     }
 
