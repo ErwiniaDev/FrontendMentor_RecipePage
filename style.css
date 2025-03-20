@@ -39,7 +39,6 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     /* line-height: 1.5; */
-    /* line-height: 1.5; */
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -55,7 +54,7 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img {
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -109,112 +108,208 @@ select {
     --rose50: hsl(330, 100%, 98%);
 
     --font-paragraphs: 1rem;   /* 1rem = 16px */
-    --font-title1: 2.5rem;
+    --font-title1: 2.7rem;    
     --font-title2: 1.85rem;
     --font-title3: 1.2rem;
+
+    --font-title1-mobile: 2.3rem;
+    --font-title2-mobile: 1.8rem;
 }
 
-body{
+body {
     font-family: 'Outfit', serif;
     font-size: var(--font-paragraphs);
-    background-color: var(--stone100);
-    padding: 7rem 0;
+    background-color: var(--white);
     color: var(--stone600);
 }
 
-main{
-    display: flex;
-    justify-content: center;
-}
-
-h1{
+h1 {
     font-family: 'Young Serif', serif;
     font-weight: 400;
-    font-size: var(--font-title1);
-    padding-top: 2rem;
+    font-size: var(--font-title1-mobile);
+    line-height: 2.2rem;
     color: var(--stone900);
+    padding: 2.5rem 1.9rem 0 1.9rem;
 }
 
-h2{
+h2 {
     font-family: 'Young Serif', serif;
     font-weight: 400;
-    font-size: var(--font-title2);
+    font-size: var(--font-title2-mobile);
     color: var(--brown800);
 }
 
-h3{
+h3 {
     color: var(--rose800);
     font-size: var(--font-title3);
 }
 
 p{
-    margin: 1.5rem 0;
+    line-height: 1.5rem;
 }
 
-article{
-    background-color: var(--white);
-    border-radius: 20px;
-    padding: 2.5rem;
-    max-width: 50%;
+article > p {
+    padding: 1.7rem 1.9rem;
+}
+article > section {
+    padding: 1.7rem 1.9rem 0 1.9rem;
 }
 
-ul,
-ol{
+ul {
+    margin-block-end: 0;
+    margin-block-start: 0.9rem;
     padding-left: 1.5rem;
 }
 
-li{
-    padding-left: 1em;
+li {
+    padding-left: 1rem;
 }
-li::marker{
+
+ol {
+    padding-left: 1.5rem;
+    margin-block-start: 1rem;
+    margin-block-end: 0;
+}
+
+ol>li {
+    line-height: 1.5rem;
+}
+
+li::marker {
     color: var(--brown800);
     font-weight: 700;
 }
 
-img{
-    border-radius: 10px;
+tr:not(:last-child) td {
+    border-bottom: 1px solid var(--stone100);
 }
 
 table{
+    padding: 0.8rem 0;
     width: 100%;
 }
-td{
-    width: 50%;
-    padding: 0.5rem 0 0.5rem 1.5rem;
 
-}
-
-tr:not(:last-child) td{
-    border-bottom: 1px solid var(--stone100);
+.column1 {
+    width: 52%;
+    padding: 0.8rem 1.9rem;
 }
 
-.section-content{
-    padding-top: 1.5rem;
-}
-.section-content:not(:last-child) {
-    border-bottom: 1px solid var(--stone100);
-}
-.section-content li {
-    padding-bottom: 1em;
-}
-
-.section-info{
-    background-color: var(--rose50);
-    padding: 20px;
-    border-radius: 10px;
-}
-.section-info li:not(:last-child) {
-    padding-bottom: 10px;
-}
-
-/* .column1{
-    
-} */
-
-.column2{
+.column2 {
     color: var(--brown800);
     font-weight: 700;
 }
+
+.section-info {
+    background-color: var(--rose50);
+    padding: 1.4rem 1.7rem;
+    border-radius: 10px;
+    margin: 0 1.8rem; /* A ne pas mettre pour le desktop */
+    line-height: 1.5rem;
+}
+
+.section-info li:not(:last-child) {
+    padding-bottom: 0.6rem;
+}
+
+.section-info > ul {
+    margin-block-start: 0.9rem;
+}
+
+.section-content {
+    padding-top: 1.5rem;
+}
+
+.section-content > ol,
+.section-content> ul {
+    border-bottom: 1px solid var(--stone100);
+    padding-bottom: 1.6rem;
+}
+
+.section-content > ul {
+    margin-block-start: 1.2rem;
+}
+
+.section-content > p {
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+}
+
+.section-content > ul > li {
+    padding-bottom: 0.8rem;
+}
+.section-content > ol > li {
+    padding-bottom: 0.5rem;
+}
+
+
+@media screen and (min-width: 400px){
+    body {
+        padding: 7.5rem 0;
+        background-color: var(--stone100);
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: var(--font-title1); 
+        padding-top: 2.9rem;
+        padding-left: 0;
+    }
+
+    h2 {
+        font-size: var(--font-title2);
+    }
+
+    article > p {
+        margin: 1.5rem 0;
+    }
+
+    article {
+        background-color: var(--white);
+        border-radius: 20px;
+        padding: 2.5rem;
+        max-width: 51%;
+    }
+
+    article > p,
+    article > section{
+        padding: 0;
+    }
+
+    ul,
+    ol {
+        padding-left: 1.5rem;
+    }
+
+    li {
+        padding-left: 1rem;
+    }
+
+    li::marker {
+        color: var(--brown800);
+        font-weight: 700;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+
+
+    .section-info {
+        margin: 0;
+        padding-top: 2.2rem;
+        padding-bottom: 1.7rem;
+    }
+
+    .section-content {
+        padding-top: 1.3rem;
+    }
+
+}
+
 
 .attribution {
     display: none;

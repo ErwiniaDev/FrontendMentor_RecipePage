@@ -16,18 +16,19 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Screenshot
 
-![](./design/screenshots/ScreenshotLaptop_FrontednMentor_RecipePage.jpg)
+<!-- ![](./design/screenshots/ScreenshotLaptop_FrontendMentor_RecipePage_V2.png)
+![](./design/screenshots/ScreenshotMobile_FrontendMentor_RecipePage_V2.png) -->
+<img src="./design/screenshots/ScreenshotLaptop_FrontendMentor_RecipePage_V2.png" alt="Laptop version screenshot" height="1000">
+<img src="./design/screenshots/ScreenshotMobile_FrontendMentor_RecipePage_V2.png" alt="Mobile version screenshot" height="1000">
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/ErwiniaDev/FrontendMentor_RecipePage](https://github.com/ErwiniaDev/FrontendMentor_RecipePage)
+- Live Site URL: [https://erwiniadev.github.io/FrontendMentor_RecipePage/](https://erwiniadev.github.io/FrontendMentor_RecipePage/)
 
 ## My process
 
@@ -40,10 +41,12 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### What I learned
 
 Table revision.
+Mobile first!
 
 ### Continued development
 
-I still have differences with spaces (paddings, margins, ...), used blocs and units I think.
+OLD - I still have differences with spaces (paddings, margins, ...), used blocs and units I think.
+EDIT - I have corrected the spaces, but I have coded the mobile and desktop versions separately... And I'm not sure that is optimal. I hope I haven't duplicated code... And I always hesitate for the choice of the units (rem, px, ...).
 
 ### Useful resources
 
